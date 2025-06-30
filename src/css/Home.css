@@ -1,0 +1,71 @@
+.home {
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Center the form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  gap: 0.5rem;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+/* Input field styling */
+.search_input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 30px;
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search_input:focus {
+  border-color: #ffa726;
+  box-shadow: 0 0 8px rgba(255, 167, 38, 0.5);
+}
+
+/* Search button styling */
+.search-button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #ff6b6b, #ffa726);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background: linear-gradient(135deg, #ff8a65, #ffc107);
+  transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+.movies_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ✅ Responsive grid */
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center; /* ✅ Center the cards */
+  align-items: start;
+}
