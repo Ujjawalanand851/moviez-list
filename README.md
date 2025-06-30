@@ -1,4 +1,10 @@
-# React + Vite
+# moviez-list
+
+View latest movies and keep track of your favorite movies.
+
+---
+
+This project is built with React + Vite.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
